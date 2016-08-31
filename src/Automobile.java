@@ -41,7 +41,9 @@ public class Automobile {
     }
 
     public void setModelYear(int modelYear) {
-        this.modelYear = modelYear;
+        if (modelYear > 1985) {
+            this.modelYear = modelYear;
+        }
     }
 
     public String getColor() {
